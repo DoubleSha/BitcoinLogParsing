@@ -10,7 +10,8 @@ peerstats.sh
 Parses the debug.log file and counts the total number of version messages received, grouped by User-Agent.
 
 Sample output:
-
+    
+    $ ./peerstats.sh
     Total 	Percent	   User-Agent
     1501  	39.3% 	   /getaddr.bitnodes.io:0.1/:
     1194  	31.3% 	   /bitcoinseeder:0.01/:
