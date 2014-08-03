@@ -10,7 +10,7 @@ while read line; do
   let "totalLogEntries+=1"
 done < <(cat "$logFile" | grep 'receive version message')
 
-printf "total\tpercent\t   User-Agent\n"
+printf "Total\tPercent\t   User-Agent\n"
 for userAgent in "${!userAgentCounts[@]}"; do
   count=${userAgentCounts[$userAgent]}
   percent=$(bc -l <<< "$count/$totalLogEntries*100")
