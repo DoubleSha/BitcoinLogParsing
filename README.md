@@ -5,7 +5,7 @@ Some useful utilities for parsing the Bitcoin debug log file (typically located 
 
 
 peerstats.sh
-=================
+-----------------
 
 Parses the debug.log file and counts the total number of version messages received, grouped by User-Agent.
 
