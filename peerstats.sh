@@ -5,7 +5,7 @@ declare -A userAgentCounts
 totalLogEntries=0
 
 while read line; do
-  userAgent=`awk '{print $6}' < <(echo "$line")`
+  userAgent=$(awk '{print $6}' < <(echo "$line"))
   let "userAgentCounts[$userAgent]+=1"
   let "totalLogEntries+=1"
 done < <(cat "$logFile" | grep 'receive version message')
